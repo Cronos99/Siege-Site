@@ -6,6 +6,11 @@
     <title>Siege Sites</title>
 </head>
 <body>
-    <h1>Hel from your friend {% for i in username %} {{i}} {%endfor%}</h1>
+    <h1>Welcome to the Ex Umbris home page.</h1>
+    <uL>
+        {% for map in maps %}
+        <li>{{map}}</li>
+        {% endfor %}
+    </uL>
 </body>
 </html> 

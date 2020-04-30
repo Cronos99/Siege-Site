@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ map }}</title>
+</head>
+<body>
+    <ul>
+        {% for site in sites %}
+            <h3> {{ site }} </h3>
+            {% for image in imageUrls[sites.index(site)] %}
+                <p>{{image}}</p>
+                <img src="./Border/Armory-Archieves/2f.jpg">
+            {% endfor %}
+        {% endfor %}
+    </ul>
+</body>
+</html>
