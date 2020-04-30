@@ -10,8 +10,7 @@
         {% for site in sites %}
             <h3> {{ site }} </h3>
             {% for image in imageUrls[sites.index(site)] %}
-                <p>{{image}}</p>
-                <img src="./Border/Armory-Archieves/2f.jpg">
+                <img src="{{url_for('static', filename='/')}}{{map}}/{{site}}/{{image}}" style="width:auto; max-width:1000px;  height:auto; max-height:900px; ">
             {% endfor %}
         {% endfor %} 
     </ul>

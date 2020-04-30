@@ -10,7 +10,7 @@ def index():
 @app.route('/<mapname>')
 def user(mapname):
     
-    path = './app/'
+    path = './app/static/'
     sec_path = '../../app/'
     sites = []
     site = 0
